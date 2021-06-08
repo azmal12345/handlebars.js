@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- online cdn  -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script> -->
+        <!-- offline cdn  -->
+        <script defer async  src="handlebars_style/handlebars.js"></script>
+        <!-- css  -->
+        <link rel="stylesheet" href="sass/handlebars.css">
+        <title>Document</title>
+</head>
+<body>
+    
+    <script id="script_template" type="text/x-handlebars-template">
+        
+        <!-- form start  -->
+        <form>
+            <p>{{form_text}}</p>
+            <input type="text" name="name" id="text" placeholder="Enter Yor Name">
+            <input type="password" name="password" id="password" placeholder="Enter Your Name">
+            <select name="select" id="select1">
+                {{#each countryName}}
+                <option value="">{{option}}</option>
+                {{/each}}
+            </select>
+
+            <select name="" id="select2">
+                {{#each cityName}}
+                <option value="">{{capital}}</option>
+                {{/each}}
+            </select>
+
+            <input type="submit" value="submit">
+            <small>{{form.information}}</small>
+        </form>
+        <!-- form end  -->
+    </script>
+
+    <!-- html output  -->
+    <div id="output"></div>
+
+    
+</body>
+<!-- jquery file  -->
+<script src="handlebars_style/jquery-3.6.0.min.js"></script>
+<!-- external file handlebars -->
+<script src="handlebars_style/handlebarsExtion.js"></script>
+</html>

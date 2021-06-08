@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#output {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 1px 16px -6px rgba(255, 0, 0, 0.5);
+          box-shadow: 10px 1px 16px -6px rgba(255, 0, 0, 0.5);
+  -webkit-animation: boxShadow 0.5s ease-in-out infinite;
+          animation: boxShadow 0.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes boxShadow {
+  0% {
+    -webkit-box-shadow: 0px 1px 16px rgba(245, 171, 171, 0.5);
+            box-shadow: 0px 1px 16px rgba(245, 171, 171, 0.5);
+  }
+  25% {
+    -webkit-box-shadow: 0px 1px 16px rgba(253, 228, 1, 0.5);
+            box-shadow: 0px 1px 16px rgba(253, 228, 1, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0px 1px 16px rgba(9, 161, 9, 0.726);
+            box-shadow: 0px 1px 16px rgba(9, 161, 9, 0.726);
+  }
+  75% {
+    -webkit-box-shadow: 0px 1px 16px rgba(53, 23, 56, 0.5);
+            box-shadow: 0px 1px 16px rgba(53, 23, 56, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 0px 1px 16px rgba(3, 179, 248, 0.911);
+            box-shadow: 0px 1px 16px rgba(3, 179, 248, 0.911);
+  }
+}
+
+@keyframes boxShadow {
+  0% {
+    -webkit-box-shadow: 0px 1px 16px rgba(245, 171, 171, 0.5);
+            box-shadow: 0px 1px 16px rgba(245, 171, 171, 0.5);
+  }
+  25% {
+    -webkit-box-shadow: 0px 1px 16px rgba(253, 228, 1, 0.5);
+            box-shadow: 0px 1px 16px rgba(253, 228, 1, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 0px 1px 16px rgba(9, 161, 9, 0.726);
+            box-shadow: 0px 1px 16px rgba(9, 161, 9, 0.726);
+  }
+  75% {
+    -webkit-box-shadow: 0px 1px 16px rgba(53, 23, 56, 0.5);
+            box-shadow: 0px 1px 16px rgba(53, 23, 56, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 0px 1px 16px rgba(3, 179, 248, 0.911);
+            box-shadow: 0px 1px 16px rgba(3, 179, 248, 0.911);
+  }
+}
+
+#output p {
+  text-align: center;
+  font-size: 1.30rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 0;
+  color: black;
+}
+
+#output form input {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+#output form,
+input[type="text"],
+input[type="password"] {
+  font-size: 12px;
+}
+
+#output form input, select {
+  width: 100%;
+  margin: 7px auto;
+  padding: 7px 5px;
+}
+
+#output form select, input[type="submit"] {
+  cursor: pointer;
+}
+
+#output small {
+  color: red;
+  text-align: center;
+}
+/*# sourceMappingURL=handlebars.css.map */
